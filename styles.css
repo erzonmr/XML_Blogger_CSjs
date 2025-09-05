@@ -1,0 +1,32 @@
+
+/* Estilos base para HtmlDivFormatter */
+.chord-sheet .paragraph {
+  margin-bottom: 1em;
+}
+
+.chord-sheet .row {
+  display: flex;
+  white-space: pre;
+}
+
+.chord-sheet .column {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.chord-sheet .chord {
+  font-weight: bold;
+  color: #2563eb; /* tono azul */
+  text-align: center;
+  padding-right: 10px;
+}
+
+.chord-sheet .lyrics {
+  min-height: 1.2em;
+}
+
+.chord-sheet .chord::after,
+.chord-sheet .lyrics::after {
+  content: '\200b'; /* mantiene alineación */
+}
